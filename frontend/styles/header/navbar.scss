@@ -8,6 +8,8 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  border: 1px solid #F1FAEE;
+  box-shadow: 0 0 1px #F1FAEE;
 
   >#logo {
     font-family: 'Caveat', cursive;
@@ -26,7 +28,7 @@ nav {
           color: #F1FAEE;
 
           &:hover {
-            color: cyan;
+            color: white;
           }
         }
       }

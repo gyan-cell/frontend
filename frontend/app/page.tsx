@@ -1,7 +1,7 @@
 
 export default function Home() {
   return (
-    <div className="h-[100rem]">
+    <div className="">
       Makima is Listening.
     </div>
   )
