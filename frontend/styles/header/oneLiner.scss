@@ -11,8 +11,6 @@
   background-color: #272727;
   font-family: 'Caveat', cursive;
   color: #F1FAEE;
-  position: sticky;
-  top: 0;
   z-index: 10;
 
   >.oneLinerText {
@@ -20,3 +18,17 @@
     height: 2rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #oneLiner {
+    padding: 0.5rem;
+    padding-bottom: 0.2rem;
+  }
+}
+
+//
+// .header {
+//   position: sticky;
+//   top: 0;
+//
+// }

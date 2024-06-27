@@ -1,0 +1,89 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272727;
+  color: #F1FAEE;
+  padding: 0.5rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  >#logo {
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+  }
+
+  >.NaveElements {
+    >ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+
+      >li {
+        >a {
+          text-decoration: underline;
+          color: #F1FAEE;
+
+          &:hover {
+            color: cyan;
+          }
+        }
+      }
+
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.Hamburger {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0.5rem 1rem;
+
+    >.NaveElements {
+      >ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #272727;
+        transition: transform 0.3s ease-in-out;
+
+        .show {
+          transform: translateX(0);
+        }
+
+        color: #F1FAEE;
+        z-index: 10;
+      }
+
+      .show {
+        transform: translateX(0);
+      }
+
+    }
+  }
+
+  .Hamburger {
+    display: block;
+    z-index: 110;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
